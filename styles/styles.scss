@@ -187,8 +187,8 @@ section{
         }
         .image{
             
-            height: 37.9rem;
-            width: 65%;
+            height: 20.9rem;
+            width: 45%;
             margin-top: 0.2rem;
             margin-left: 4rem;
             
@@ -198,7 +198,9 @@ section{
             img{
                 object-fit: cover;
                 transition: all .4s ease-in-out;
-                position: absolute;
+                position:sticky;
+                top: 28%;
+                right: 5%;
                 bottom: 8.5%;
                 left: 20%;
                 
