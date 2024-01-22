@@ -185,31 +185,20 @@ section{
             z-index: -1;
             clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
         }
-        .image{
-            
-            height: 20.9rem;
-            width: 45%;
-            margin-top: 0.2rem;
-            margin-left: 4rem;
-            
-            margin-left: 4rem;
-            background-color: var(--color-black);
-            transition: all .4s ease-in-out;
-            img{
+        img{
                 object-fit: cover;
                 transition: all .4s ease-in-out;
-                position:sticky;
+                position: sticky;
                 top: 28%;
-                right: 5%;
-                bottom: 8.5%;
-                left: 20%;
+                right: 25%;
+                bottom: 8.5% !important;
+                left: 12%;
+                    
+                    //filter: grayscale(100%);
+                    //&:hover{
+                    //    filter: grayscale(0);
+                    //}
                 
-                //filter: grayscale(100%);
-                //&:hover{
-                //    filter: grayscale(0);
-                //}
-                
-            }
         }
     }
     .right-header{

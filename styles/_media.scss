@@ -30,17 +30,18 @@
         .h-shape{
             display: none;
         }
-        .image {
-            margin: 0% !important;
-            margin: 0% !important;
-            height: 117.2% !important;
-            width: 99% !important;
-            margin-bottom: 10.9rem !important;
-
+        img{
+            object-fit: cover;
+            transition: all .4s ease-in-out;
+            position: sticky;
+            
+            bottom: 8.5% !important;
+            left: 12%;
+            
         }
-    
         grid-row: 2;
-        height: 80vh;
+        height: 20vh;
+        
         
     }
    
