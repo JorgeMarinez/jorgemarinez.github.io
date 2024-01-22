@@ -774,8 +774,7 @@ section {
 @media screen and (max-width: 600px) {
   header {
     padding: 0;
-    height: auto;
-    min-height: 2vh !important;
+    height: 1130px;
   }
   header .right-header {
     padding: 2rem !important;
@@ -838,7 +837,7 @@ section {
   .sec3 .main-title {
     width: 100%;
     padding-right: 25px;
-    padding-left: 35px;
+    padding-left: 25px;
   }
   .blogs {
     grid-template-columns: 1fr;
