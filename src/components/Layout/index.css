@@ -33,6 +33,7 @@
   top: 5%;
   margin: 0 auto;
   z-index: 1;
+  overflow: scroll;
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
