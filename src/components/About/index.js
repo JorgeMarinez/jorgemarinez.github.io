@@ -35,7 +35,7 @@ const About = () => {
           </h1>
           <p>
 
-          Hello! I'm a Computer Science and Biochemistry student at CSUEB, passionate about the intersection of technology and life sciences. My academic journey has equipped me with a robust skill set, seamlessly blending programming expertise with a deep understanding of biochemical complexities.          </p>
+          Hello! I'm a Computer Science and Biochemistry major, passionate about the intersection of technology and life sciences. My academic journey has equipped me with a robust skill set, seamlessly blending programming expertise with a deep understanding of biochemical complexities.          </p>
           <p align="LEFT">
           In the world of computer science, I excel in coding and problem-solving, tackling everything from algorithms to user-friendly applications. Simultaneously, my biochemistry studies delve into the molecular intricacies of life, exploring DNA, biochemical pathways, and beyond.          </p>
           <p>
