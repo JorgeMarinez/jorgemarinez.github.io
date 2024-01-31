@@ -1,6 +1,6 @@
 
 .text-animate {
-  display: ruby-text-container;
+  display: contents;
   opacity: 0;
   animation: bounceIn;
   animation-duration: 1s;
@@ -12,7 +12,7 @@
 
 .text-animate-hover {
   min-width: 10px;
-  display: ruby-text-container;
+  display: contents;
   animation-fill-mode: both;
 
   &:hover {
