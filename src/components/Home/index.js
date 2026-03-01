@@ -25,8 +25,15 @@ const Home = () => {
                         
 
     return (
+<<<<<<< HEAD
         <>
             <div className="container home-page">
+=======
+
+
+        <>
+        <div className="container home-page">
+>>>>>>> 5f95b25d3699142d874003c0881e010588999e38
             <div className="text-zone">
                 <h1>
                 <span className={letterClass}>H</span>
@@ -49,8 +56,13 @@ const Home = () => {
                 <Link to="/contact" className="flat-button">CONTACT ME</Link>
             </div>
             
+<<<<<<< HEAD
             </div>
             <Loader type="pacman"/>
+=======
+        </div>
+        <Loader type="pacman"/>
+>>>>>>> 5f95b25d3699142d874003c0881e010588999e38
         </>
     );
     

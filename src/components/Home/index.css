@@ -5,6 +5,10 @@
   transform: translateY(-50%);
   width: 40%;
   max-height: 90%;
+<<<<<<< HEAD
+=======
+  min-width: 300px;
+>>>>>>> 5f95b25d3699142d874003c0881e010588999e38
 }
 .home-page h1 {
   color: #fff;
@@ -31,7 +35,11 @@
   font-size: 18px;
   position: relative;
   margin-top: 18px;
+<<<<<<< HEAD
   margin-left: 20px;
+=======
+  left: 6px;
+>>>>>>> 5f95b25d3699142d874003c0881e010588999e38
 }
 .home-page h1 img {
   width: 32px;

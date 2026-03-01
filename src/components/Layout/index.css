@@ -33,6 +33,10 @@
   top: 5%;
   margin: 0 auto;
   z-index: 1;
+<<<<<<< HEAD
+=======
+  overflow: scroll;
+>>>>>>> 5f95b25d3699142d874003c0881e010588999e38
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
@@ -58,7 +62,10 @@
   margin-top: 0;
   position: relative;
   margin-bottom: 40px;
+<<<<<<< HEAD
   left: -10px;
+=======
+>>>>>>> 5f95b25d3699142d874003c0881e010588999e38
 }
 .contact-page h1:before,
 .about-page h1:before {

@@ -1,5 +1,9 @@
 .text-animate {
+<<<<<<< HEAD
   display: ruby-text-container;
+=======
+  display: contents;
+>>>>>>> 5f95b25d3699142d874003c0881e010588999e38
   opacity: 0;
   animation: bounceIn;
   animation-duration: 1s;
@@ -10,7 +14,11 @@
 
 .text-animate-hover {
   min-width: 10px;
+<<<<<<< HEAD
   display: ruby-text-container;
+=======
+  display: contents;
+>>>>>>> 5f95b25d3699142d874003c0881e010588999e38
   animation-fill-mode: both;
 }
 .text-animate-hover:hover {

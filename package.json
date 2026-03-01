@@ -1,4 +1,9 @@
 {
+<<<<<<< HEAD
+=======
+  
+  "homepage": "https://jorgemarinez.github.io",
+>>>>>>> 5f95b25d3699142d874003c0881e010588999e38
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -26,7 +31,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+<<<<<<< HEAD
     "eject": "react-scripts eject"
+=======
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+>>>>>>> 5f95b25d3699142d874003c0881e010588999e38
   },
   "eslintConfig": {
     "extends": [
@@ -45,5 +56,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+<<<<<<< HEAD
+=======
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+>>>>>>> 5f95b25d3699142d874003c0881e010588999e38
   }
 }
