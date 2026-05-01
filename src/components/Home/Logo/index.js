@@ -1,7 +1,5 @@
-<<<<<<< HEAD
+
 /*
-=======
->>>>>>> 5f95b25d3699142d874003c0881e010588999e38
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap-trial'
 import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
@@ -23,11 +21,11 @@ const Logo = () => {
         opacity: 1,
       })
       .from(outlineLogoRef.current, {
-<<<<<<< HEAD
+
         drawSVG: 0,
-=======
+
         drawSVG: 1,
->>>>>>> 5f95b25d3699142d874003c0881e010588999e38
+
         duration: 20,
       })
 
@@ -67,9 +65,8 @@ const Logo = () => {
 
 }
 
-<<<<<<< HEAD
 export default Logo
 */
-=======
+
 export default Logo
->>>>>>> 5f95b25d3699142d874003c0881e010588999e38
+

@@ -5,21 +5,18 @@
   transform: translateY(-50%);
   width: 40%;
   max-height: 90%;
-<<<<<<< HEAD
-=======
   min-width: 300px;
->>>>>>> 5f95b25d3699142d874003c0881e010588999e38
 }
 .home-page h1 {
   color: #fff;
   font-size: 53px;
   margin: 0;
-  font-family: "Coolvetica";
+  font-family: "Coolvetica", sans-serif;
   font-weight: 400;
 }
 .home-page h1::before {
   content: "<h1>";
-  font-family: "La Belle Aurore";
+  font-family: "La Belle Aurore", cursive;
   color: #ffd700;
   font-size: 18px;
   position: absolute;
@@ -29,22 +26,17 @@
 }
 .home-page h1::after {
   content: "</h1>";
-  font-family: "La Belle Aurore";
+  font-family: "La Belle Aurore", cursive;
   color: #ffd700;
-  opacity: 0.6;
   font-size: 18px;
   position: relative;
   margin-top: 18px;
-<<<<<<< HEAD
-  margin-left: 20px;
-=======
   left: 6px;
->>>>>>> 5f95b25d3699142d874003c0881e010588999e38
+  opacity: 0.6;
 }
 .home-page h1 img {
   width: 32px;
   margin-left: 10px;
-  right: 10px;
   opacity: 0;
   height: auto;
   animation: rotateIn 1s linear both;
@@ -72,8 +64,39 @@
   float: left;
   animation: fadeIn 1s 1.8s backwards;
   white-space: nowrap;
+  transition: all 0.3s ease;
 }
 .home-page .flat-button:hover {
   background: #ffd700;
   color: #333;
+}
+@media screen and (max-width: 768px) {
+  .home-page .text-zone {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    padding: 20px;
+    padding-top: 100px;
+    min-width: unset;
+  }
+  .home-page .text-zone h1 {
+    font-size: clamp(32px, 8vw, 53px);
+    overflow-wrap: break-word;
+  }
+  .home-page .text-zone h1::before, .home-page .text-zone h1::after {
+    display: none;
+  }
+  .home-page .text-zone h1 img {
+    width: 32px;
+    margin-left: 4px;
+  }
+  .home-page .text-zone .flat-button {
+    float: none;
+    display: block;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 30px auto 0;
+  }
 }/*# sourceMappingURL=index.css.map */

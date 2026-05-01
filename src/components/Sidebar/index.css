@@ -1,11 +1,12 @@
 .nav-bar {
+  display: flex;
   background-color: #181818;
   width: 60px;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 3;
-  min-height: 500px;
+  min-height: 100vh;
 }
 .nav-bar .logo {
   display: block;
@@ -37,9 +38,6 @@
   height: 51px;
   position: relative;
   text-decoration: none;
-}
-.nav-bar nav a i {
-  transition: all 0.3 ease-out;
 }
 .nav-bar nav a:hover {
   color: #ffd700;
@@ -88,8 +86,78 @@
   padding: 7px 0;
   display: block;
   font-size: 15px;
-  line-height: 16px;
 }
 .nav-bar ul li a:hover svg {
   color: #ffd700;
+}
+.nav-bar .hamburger-icon, .nav-bar .close-icon {
+  display: none;
+}
+.nav-bar {
+  /* MOBILE RESPONSIVE STYLES */
+}
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    background: transparent;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+  }
+  .nav-bar .nav-bar {
+    width: 100% !important;
+    max-width: 100vw;
+  }
+  .nav-bar .logo {
+    left: 15px;
+    top: 0;
+  }
+  .nav-bar nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #181818;
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .nav-bar nav.mobile-show {
+    display: flex;
+  }
+  .nav-bar nav a {
+    font-size: 40px;
+    padding: 25px 0;
+    height: auto;
+    line-height: normal;
+  }
+  .nav-bar nav a:after {
+    display: none;
+  }
+  .nav-bar nav a svg {
+    opacity: 1 !important;
+  }
+  .nav-bar ul {
+    display: none;
+  }
+  .nav-bar .hamburger-icon {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .nav-bar .close-icon {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=index.css.map */

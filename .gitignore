@@ -25,3 +25,7 @@ node_modules
 node_modules
 node_modules
 node_modules
+
+*.css.map
+src/**/*.css
+!src/index.css

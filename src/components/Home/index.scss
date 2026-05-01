@@ -1,95 +1,119 @@
+@use '../../variables' as *;
+
 .home-page {
+  .text-zone {
+    position: absolute;
+    left: 23%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    max-height: 90%;
+    min-width: 300px;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 53px;
+    margin: 0;
+    font-family: 'Coolvetica', sans-serif;
+    font-weight: 400;
+
+    &::before {
+      content: '<h1>';
+      font-family: 'La Belle Aurore', cursive;
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -20px;
+      left: 15px;
+      opacity: 0.6;
+    }
+
+    &::after {
+      content: '</h1>';
+      font-family: 'La Belle Aurore', cursive;
+      color: #ffd700;
+      font-size: 18px;
+      position: relative;
+      margin-top: 18px;
+      left: 6px;
+      opacity: 0.6;
+    }
+
+    img {
+      width: 32px;
+      margin-left: 10px;
+      opacity: 0;
+      height: auto;
+      animation: rotateIn 1s linear both;
+      animation-delay: 1.4s;
+    }
+  }
+
+  h2 {
+    color: #8d8d8d;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 11px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
+  }
+
+  .flat-button {
+    color: #ffd700;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #ffd700;
+    margin-top: 25px;
+    float: left;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #ffd700;
+      color: #333;
+    }
+  }
+
+  // ─── Mobile ─────────────────────────────────────────────────────────────────
+  @media screen and (max-width: 768px) {
     .text-zone {
-        position: absolute;
-        left: 23%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40%;
-        max-height: 90%;
-<<<<<<< HEAD
-=======
-        min-width: 300px;
->>>>>>> 5f95b25d3699142d874003c0881e010588999e38
-        
-      }
+      position: relative;
+      left: auto;
+      top: auto;
+      transform: none;
+      width: 100%;
+      padding: 20px;
+      padding-top: 100px;
+      min-width: unset;
 
-    h1 {
-        color: #fff;
-        font-size: 53px;
-        margin: 0;
-        font-family: 'Coolvetica';
-        font-weight: 400;
+      h1 {
+        font-size: clamp(32px, 8vw, 53px);
+        overflow-wrap: break-word;
 
-        &::before {
-            content: '<h1>';
-            font-family: 'La Belle Aurore';
-            color: #ffd700;
-            font-size: 18px;
-            position: absolute;
-            margin-top: -20px;
-            left: 15px;
-            opacity: 0.6;
-        }
-
+        &::before,
         &::after {
-            content: '</h1>';
-            font-family: 'La Belle Aurore';
-            color: #ffd700;
-            opacity: 0.6;
-            font-size: 18px;
-            position: relative;
-            margin-top: 18px;
-<<<<<<< HEAD
-            margin-left: 20px;
-=======
-            //margin-left: 20px;
-            left: 6px;
->>>>>>> 5f95b25d3699142d874003c0881e010588999e38
-            
-            
+          display: none;
         }
 
         img {
-            width: 32px;
-            margin-left: 10px;
-            right: 10px;
-            opacity: 0;
-            height: auto;
-            animation: rotateIn 1s linear both;
-            animation-delay: 1.4s;
+          width: 32px;
+          margin-left: 4px;
         }
+      }
+
+      .flat-button {
+        float: none;
+        display: block;
+        width: max-content;
+        margin: 30px auto 0;
+      }
     }
-
-    h2 {
-        color: #8d8d8d;
-        margin-top: 20px;
-        font-weight: 400;
-        font-size: 11px;
-        font-family: sans-serif;
-        letter-spacing: 3px;
-        animation: fadeIn 1s 1.8s backwards;
-    }
-    
-    .flat-button {
-        color: #ffd700;
-        font-size: 13px;
-        font-weight: 400;
-        letter-spacing: 4px;
-        font-family: sans-serif;
-        text-decoration: none;
-        padding: 10px 18px;
-        border: 1px solid #ffd700;
-        margin-top: 25px;
-        float: left;
-        animation: fadeIn 1s 1.8s backwards;
-        white-space: nowrap;
-
-        &:hover {
-            background: #ffd700;
-            color: #333;
-        }
-
-    }
-
-    
+  }
 }

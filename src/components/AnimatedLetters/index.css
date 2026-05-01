@@ -1,29 +1,21 @@
 .text-animate {
-<<<<<<< HEAD
-  display: ruby-text-container;
-=======
-  display: contents;
->>>>>>> 5f95b25d3699142d874003c0881e010588999e38
+  display: inline-block;
   opacity: 0;
   animation: bounceIn;
   animation-duration: 1s;
-  animation-delay: 1s;
   animation-fill-mode: forwards;
   min-width: 10px;
 }
 
 .text-animate-hover {
   min-width: 10px;
-<<<<<<< HEAD
-  display: ruby-text-container;
-=======
-  display: contents;
->>>>>>> 5f95b25d3699142d874003c0881e010588999e38
+  display: inline-block;
   animation-fill-mode: both;
 }
 .text-animate-hover:hover {
   animation: rubberBand 1s;
   color: #ffd700;
+  cursor: pointer;
 }
 
 .text-animate._1 {

@@ -15,12 +15,12 @@ import './index.scss'
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-
   useEffect(() => {
-    return () => { setTimeout(() => {
-        setLetterClass('text-animate-hover')
-        }   , 4000) }
-    }, [])
+    const timer = setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 4000)
+    return () => clearTimeout(timer)
+  }, [])
 
   return (
     <>
@@ -34,16 +34,24 @@ const About = () => {
             />
           </h1>
           <p>
-
-<<<<<<< HEAD
-          Hello! I'm a Computer Science and Biochemistry student at CSUEB, passionate about the intersection of technology and life sciences. My academic journey has equipped me with a robust skill set, seamlessly blending programming expertise with a deep understanding of biochemical complexities.          </p>
-=======
-          Hello! I'm a Computer Science and Biochemistry major, passionate about the intersection of technology and life sciences. My academic journey has equipped me with a robust skill set, seamlessly blending programming expertise with a deep understanding of biochemical complexities.          </p>
->>>>>>> 5f95b25d3699142d874003c0881e010588999e38
+            Hello! I'm a Computer Science and Biochemistry student at CSUEB, 
+            passionate about the intersection of technology and life sciences. 
+            My academic journey has equipped me with a robust skill set, 
+            seamlessly blending programming expertise with a deep understanding 
+            of biochemical complexities.
+          </p>
           <p align="LEFT">
-          In the world of computer science, I excel in coding and problem-solving, tackling everything from algorithms to user-friendly applications. Simultaneously, my biochemistry studies delve into the molecular intricacies of life, exploring DNA, biochemical pathways, and beyond.          </p>
+            In the world of computer science, I excel in coding and problem-solving, 
+            tackling everything from algorithms to user-friendly applications. 
+            Simultaneously, my biochemistry studies delve into the molecular 
+            intricacies of life, exploring DNA, biochemical pathways, and beyond.
+          </p>
           <p>
-          I invite you to explore my portfolio, where I showcase projects that reflect my commitment to bridging the gap between these two diverse yet interconnected fields. Join me in navigating the dynamic landscape where code meets molecules!          </p>
+            I invite you to explore my portfolio, where I showcase projects that 
+            reflect my commitment to bridging the gap between these two diverse 
+            yet interconnected fields. Join me in navigating the dynamic landscape 
+            where code meets molecules!
+          </p>
         </div>
 
         <div className="stage-cube-cont">
