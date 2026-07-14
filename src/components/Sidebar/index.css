@@ -2,11 +2,11 @@
   display: flex;
   background-color: #181818;
   width: 60px;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   top: 0;
-  z-index: 3;
-  min-height: 100vh;
+  left: 0;
+  z-index: 20;
 }
 .nav-bar .logo {
   display: block;
@@ -15,11 +15,17 @@
 }
 .nav-bar .logo img {
   display: block;
-  width: 25px;
+  width: 31px;
   height: auto;
-  margin-top: 20px;
-  margin-left: 15px;
+  margin-top: 18px;
+  margin-left: 14px;
   position: relative;
+}
+.nav-bar .hamburger-icon,
+.nav-bar .close-icon {
+  font-size: 40px;
+  margin-top: 8px;
+  margin-left: 10px;
 }
 .nav-bar nav {
   display: block;
@@ -90,24 +96,18 @@
 .nav-bar ul li a:hover svg {
   color: #ffd700;
 }
-.nav-bar .hamburger-icon, .nav-bar .close-icon {
+.nav-bar .hamburger-icon,
+.nav-bar .close-icon {
   display: none;
 }
-.nav-bar {
-  /* MOBILE RESPONSIVE STYLES */
-}
+
 @media screen and (max-width: 768px) {
   .nav-bar {
     background: transparent;
-    position: fixed;
-    height: 60px;
     width: 100%;
-    top: 0;
-    z-index: 10;
-  }
-  .nav-bar .nav-bar {
-    width: 100% !important;
-    max-width: 100vw;
+    height: 60px;
+    min-height: auto;
+    z-index: 100;
   }
   .nav-bar .logo {
     left: 15px;
@@ -116,12 +116,11 @@
   .nav-bar nav {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
-    height: 100%;
+    height: 100dvh;
     background: #181818;
-    z-index: 1000;
+    z-index: 999;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -151,7 +150,7 @@
     top: 15px;
     right: 15px;
     cursor: pointer;
-    z-index: 10;
+    z-index: 1001;
   }
   .nav-bar .close-icon {
     display: block;
@@ -159,5 +158,6 @@
     top: 15px;
     right: 15px;
     cursor: pointer;
+    z-index: 1001;
   }
 }/*# sourceMappingURL=index.css.map */

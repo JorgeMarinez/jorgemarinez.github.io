@@ -7,7 +7,6 @@ import {
   faJsSquare,
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
-import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
@@ -34,23 +33,23 @@ const About = () => {
             />
           </h1>
           <p>
-            Hello! I'm a Computer Science and Biochemistry student at CSUEB, 
-            passionate about the intersection of technology and life sciences. 
-            My academic journey has equipped me with a robust skill set, 
-            seamlessly blending programming expertise with a deep understanding 
-            of biochemical complexities.
+            I am a Computer Science and Biochemistry graduate from California State University, 
+            East Bay with a passion for building software and solving complex scientific problems. 
+            My background spans software engineering, data analysis, and laboratory research, 
+            giving me experience in both computational and experimental environments.
           </p>
           <p align="LEFT">
-            In the world of computer science, I excel in coding and problem-solving, 
-            tackling everything from algorithms to user-friendly applications. 
-            Simultaneously, my biochemistry studies delve into the molecular 
-            intricacies of life, exploring DNA, biochemical pathways, and beyond.
+            Through academic and personal projects, I have developed bioinformatics tools,
+            artificial neural networks, operating systems simulations, and modern web applications.
+            My scientific experience includes analytical chemistry research using HPLC and 
+            spectrophotometry, where I worked with experimental data, statistical analysis, 
+            and scientific reporting.
           </p>
           <p>
-            I invite you to explore my portfolio, where I showcase projects that 
-            reflect my commitment to bridging the gap between these two diverse 
-            yet interconnected fields. Join me in navigating the dynamic landscape 
-            where code meets molecules!
+            I am particularly interested in software engineering, bioinformatics, scientific 
+            computing, artificial intelligence, and emerging technologies that advance biological
+            research. I enjoy creating tools that transform complex data into meaningful insights
+            and practical solutions.
           </p>
         </div>
 
@@ -77,7 +76,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Loader type="pacman" />
     </>
   )
 }

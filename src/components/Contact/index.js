@@ -1,4 +1,4 @@
-import Loader from 'react-loaders'
+
 import { useEffect, useRef, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
@@ -89,7 +89,6 @@ return (
           </div>
             </div>
         </div>
-        <Loader type="pacman" />
     </>
     )
 }

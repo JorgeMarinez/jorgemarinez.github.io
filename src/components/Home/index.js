@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import LogoTitle from '../../assets/images/logo-j.png'
 import AnimatedLetters from '../AnimatedLetters';
-import Loader from 'react-loaders'
 import './index.scss';
 
 const Home = () => {
@@ -50,11 +49,17 @@ const Home = () => {
                             idx={40} // Start this index where the first array left off
                         />
                     </h1>
-                    <h2>Algorithms Expert</h2>
-                    <Link to="/contact" className="flat-button">CONTACT ME</Link>
+                    <h2>Computer Science × Biochemistry</h2>
+                        <a
+                            href={`${process.env.PUBLIC_URL}/Jorge_Marinez_Diaz_Resume.pdf`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                             className="flat-button"
+                        >
+                        VIEW RESUME
+                    </a>
                 </div>
             </div>
-            <Loader type="pacman"/>
         </>
     );
 }

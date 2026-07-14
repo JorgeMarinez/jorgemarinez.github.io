@@ -1,51 +1,38 @@
 @use '_variables' as *;
-
 @import 'animate.css';
 @import '~loaders.css/src/animations/pacman.scss';
 
 
-
-// App.scss (at the bottom)
-.container {
-  width: 100%;
-  will-change: contents;
-  height: 90%;
-  min-height: 566px;
-  position: absolute;
-  opacity: 0;
-  top: 0%;
-  margin: 0 auto;
-  z-index: 1;
-  transform-style: preserve-3d;
-  animation: fadeIn 1s forwards;
-  animation-delay: 1s;
-  padding-top: 80px;
-  box-sizing: border-box; // ADD THIS — prevents width overflow
+#root {
+  min-height: 100vh;
 }
 
-// Target your name "Jorge" or the "J" logo
-.j-letter, span.text-animate-hover:hover {
-  color: $primary-color;
+.App {
+  min-height: 100vh;
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-// Target your button
-.flat-button {
-  color: $primary-color;
-  border: 1px solid $primary-color;
-  background: transparent;
-  
-  &:hover {
-    background: $primary-color;
-    color: $bg-color;
-  }
+// ─── Global Reset ─────────────────────────────────────────────────────────────
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: radial-gradient(circle at 50% 50%, #1e293b 0%, #0f172a 100%);
+  font-family: 'Inter', 'Helvetica Neue', sans-serif;
 }
 
+* {
+  touch-action: manipulation;
+}
 
-
-
+// ─── Fonts ────────────────────────────────────────────────────────────────────
 @font-face {
   font-family: 'Helvetica Neue';
-  src: url('./assets/fonts/helvetica-neu.ttf') format('tff');
+  src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
 }
 
 @font-face {
@@ -63,26 +50,41 @@ textarea {
   font-family: 'Helvetica Neue';
 }
 
-.loader-active {
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  width: 50px;
-  height: 50px;
-  animation: fadeOut 1s 1s;
-  animation-fill-mode: forwards;
+// ─── Global Colour Targets ────────────────────────────────────────────────────
+.j-letter,
+span.text-animate-hover:hover {
+  color: $primary-color;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    margin-left: 0;
-    width: 100%;
-    padding-top: 60px;
-    overflow-x: hidden;
-    max-width: 100vw;
+// ─── Global Button ────────────────────────────────────────────────────────────
+.flat-button {
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  background: transparent;
+
+  &:hover {
+    background: $primary-color;
+    color: $bg-color;
   }
+}
+
+// ─── Loader ───────────────────────────────────────────────────────────────────
+.loader-active {
+  display: block;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  z-index: 9999;
+  pointer-events: none;
+
+  animation: fadeOut 1s 1s forwards;
+}
+
+.pacman,
+.loader-hidden,
+.loader-active {
+  pointer-events: none !important;
 }

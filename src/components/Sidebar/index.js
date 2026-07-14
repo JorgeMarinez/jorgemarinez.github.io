@@ -8,7 +8,7 @@ import {
     faHome, 
     faUser, 
     faBars,   
-    faClose,   
+    faXmark,   
     faCode
 } from '@fortawesome/free-solid-svg-icons';
 import {
@@ -61,9 +61,8 @@ const Sidebar = () => {
 
                 <FontAwesomeIcon 
                     onClick={() => setShowNav(false)}
-                    icon={faClose}
+                    icon={faXmark}
                     color="#ffd700"
-                    size="3x"
                     className='close-icon' />
             </nav>
 
@@ -85,12 +84,14 @@ const Sidebar = () => {
                 </li>
             </ul>
 
-            <FontAwesomeIcon 
-                onClick={() => setShowNav(true)}
-                icon={faBars} 
-                color="#ffd700" 
-                size="3x" 
-                className='hamburger-icon' />
+            {!showNav && (
+                <FontAwesomeIcon
+                    onClick={() => setShowNav(true)}
+                    icon={faBars}
+                    color="#ffd700"
+                    className="hamburger-icon"
+                />
+            )}
         </div>
     )
 }

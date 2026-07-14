@@ -4,19 +4,29 @@
   "private": true,
   "homepage": "https://JorgeMarinez.github.io",
   "dependencies": {
-    "@fortawesome/free-brands-svg-icons": "^6.0.0",
-    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@emailjs/browser": "^4.4.1",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-regular-svg-icons": "^7.2.0",
+    "@fortawesome/free-solid-svg-icons": "^7.2.0",
+    "@fortawesome/react-fontawesome": "^0.1.19",
+    "animate.css": "^4.1.1",
+    "loaders.css": "^0.1.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-loaders": "^3.0.1",
+    "react-router-dom": "^7.14.2",
     "react-scripts": "5.0.1",
-    "sass": "^1.50.0"
+    "sass": "^1.99.0",
+    "web-vitals": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -29,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

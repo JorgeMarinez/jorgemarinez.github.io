@@ -1,25 +1,36 @@
+html,
+body,
+#root,
+.App {
+  margin: 0;
+  padding: 0;
+  min-height: 100dvh;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 .page {
   width: 100%;
-  height: 100%;
-  position: absolute;
+  min-height: 100dvh;
+  height: auto;
+  position: relative;
   padding-left: 60px;
   box-sizing: border-box;
   overflow-x: hidden;
-}
-
-html, body {
-  overflow-x: hidden;
-  max-width: 100%;
+  overflow-y: visible;
 }
 
 .tags {
   color: #ffd700;
   opacity: 0.6;
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  bottom: 20px;
   left: 120px;
   font-size: 18px;
   font-family: "La Belle Aurore", cursive;
+  z-index: -1;
+  pointer-events: none;
 }
 
 .top-tags {
@@ -33,18 +44,16 @@ html, body {
 
 .container {
   width: 100%;
-  will-change: contents;
-  height: 90%;
-  min-height: 566px;
-  position: absolute;
+  min-height: 100dvh;
+  height: auto;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: visible;
   opacity: 0;
-  top: 5%;
-  margin: 0 auto;
   z-index: 1;
-  transform-style: preserve-3d;
-  animation: fadeIn 1s forwards;
-  animation-delay: 1s;
-  overflow-y: auto;
+  animation: fadeIn 0.6s forwards;
+  animation-delay: 0s;
+  padding-bottom: 120px;
 }
 
 .contact-page .text-zone,
@@ -122,13 +131,14 @@ html, body {
 
 .home-page {
   width: 100%;
-  height: 100vh;
+  min-height: 100dvh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding-left: 10%;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: visible;
 }
 .home-page .text-zone {
   position: relative;
@@ -181,19 +191,28 @@ html, body {
   background: #ffd700;
   color: #333;
 }
+
 @media screen and (max-width: 768px) {
+  .page {
+    padding-left: 0;
+  }
+  .container {
+    min-height: 100dvh;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 140px;
+  }
+  .tags {
+    display: none;
+  }
   .home-page {
     padding: 20px;
     padding-top: 120px;
     align-items: flex-start;
     display: block;
-  }
-  .home-page .page {
-    padding-left: 0;
-  }
-  .home-page .container {
-    overflow-y: auto;
-    height: 100%;
+    min-height: 100dvh;
+    overflow: visible;
   }
   .home-page .text-zone h1 {
     font-size: 34px;
@@ -209,5 +228,24 @@ html, body {
     width: -moz-max-content;
     width: max-content;
     margin: 30px auto 0;
+  }
+  .contact-page .text-zone,
+  .about-page .text-zone {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    padding: 20px;
+    padding-top: 80px;
+  }
+  .contact-page h1,
+  .about-page h1 {
+    font-size: 36px;
+  }
+  .contact-page h1::before, .contact-page h1::after,
+  .about-page h1::before,
+  .about-page h1::after {
+    display: none;
   }
 }/*# sourceMappingURL=index.css.map */
